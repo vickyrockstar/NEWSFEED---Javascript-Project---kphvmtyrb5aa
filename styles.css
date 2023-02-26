@@ -1,1 +1,284 @@
-
+.new-news:hover{
+    text-decoration: underline;
+    cursor: pointer!important;
+  }
+  .categoryCls{
+    font-weight: bolder!important;
+  }
+  .putFlex{
+    display: flex;
+    justify-content: center;
+  }
+  .dropdown-item:hover{
+    background-color: #0077ff !important;
+  }
+  .flexDrop li{
+    display: flex;
+    justify-content: space-between;
+  }
+  #colorNav{
+    background-color: #948fba !important;
+  }
+  .introFlex{
+    display: flex;
+    flex-direction: row;
+  background: linear-gradient(237deg, rgba(238,240,41,1) 0%, rgba(113,105,243,1) 100%);
+  padding: 50px 30px 20px 30px;
+  
+  }
+  .sideDis{
+    text-align: center;
+  }
+  .intro{
+    margin: auto;
+    text-align: center;
+  }
+  .hrt-btn{
+    color: white;
+    font-size: 30px;
+    
+  }
+  .save-button {
+    background-color: #333;
+    color: #fff!important;
+    height: 40px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bolder!important;
+  }
+  .news-feed {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .cards{
+    display: grid;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  .card{
+    width: 80%;
+    height: 200px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    overflow: hidden;
+    position: relative;
+    margin:auto;
+    margin-bottom: 20px;
+    background-color: #EDDBC7
+    !important;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
+  }
+  .card-middle{
+    display: flex;
+    flex-direction: column;
+  }
+  @media only screen and  (max-width: 600px) {
+    .card {
+      width: 90%;
+      height: auto;
+      margin: 20px auto;
+    }
+    .introFlex{
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+    
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .writer-name {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .category-name {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .card .card-body {
+    height: 120px;
+   
+  }
+  .card .card-body .card-content-container {
+    max-height: 0;
+    overflow: hidden;
+    
+  }
+  .card-body.read-more .card-img-container {
+    max-height: 400px;
+  }
+  .card-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .card-img-container {
+    width: 30%;
+    height: 30%;
+  }
+  .content {
+    width: 70%;
+    font-size: 16px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .card-body.read-more .card-content-container {
+    max-height: 1000px;
+  }
+  
+  .card-title{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .read-more{
+    background-color: #0077ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+  }
+  .img{
+    display: flex;
+    justify-content: left;
+    gap: 10%;
+    height: 200px;
+    width: 150px;
+  }
+  .source-url{
+    background-color: #874c22;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+  }
+  .card-footer-right{
+    gap: 10%;
+  
+  }
+  .date{
+    font-size: 16px;
+    color: #777;
+  
+  }
+  .save-news{
+    background-color: #81B622;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+    /* loader  */
+  
+    @keyframes ldio-y2buzigfpa {
+      0% { opacity: 1 }
+      100% { opacity: 0 }
+    }
+    .ldio-y2buzigfpa div {
+      left: 94px;
+      top: 48px;
+      position: absolute;
+      animation: ldio-y2buzigfpa linear 1s infinite;
+      background: #fe718d;
+      width: 12px;
+      height: 24px;
+      border-radius: 6px / 12px;
+      transform-origin: 6px 52px;
+    }.ldio-y2buzigfpa div:nth-child(1) {
+      transform: rotate(0deg);
+      animation-delay: -0.9166666666666666s;
+      background: #fe718d;
+    }.ldio-y2buzigfpa div:nth-child(2) {
+      transform: rotate(30deg);
+      animation-delay: -0.8333333333333334s;
+      background: #fe718d;
+    }.ldio-y2buzigfpa div:nth-child(3) {
+      transform: rotate(60deg);
+      animation-delay: -0.75s;
+      background: #fe718d;
+    }.ldio-y2buzigfpa div:nth-child(4) {
+      transform: rotate(90deg);
+      animation-delay: -0.6666666666666666s;
+      background: #fe718d;
+    }.ldio-y2buzigfpa div:nth-child(5) {
+      transform: rotate(120deg);
+      animation-delay: -0.5833333333333334s;
+      background: #fe718d;
+    }.ldio-y2buzigfpa div:nth-child(6) {
+      transform: rotate(150deg);
+      animation-delay: -0.5s;
+      background: #fe718d;
+    }.ldio-y2buzigfpa div:nth-child(7) {
+      transform: rotate(180deg);
+      animation-delay: -0.4166666666666667s;
+      background: #fe718d;
+    }.ldio-y2buzigfpa div:nth-child(8) {
+      transform: rotate(210deg);
+      animation-delay: -0.3333333333333333s;
+      background: #fe718d;
+    }.ldio-y2buzigfpa div:nth-child(9) {
+      transform: rotate(240deg);
+      animation-delay: -0.25s;
+      background: #fe718d;
+    }.ldio-y2buzigfpa div:nth-child(10) {
+      transform: rotate(270deg);
+      animation-delay: -0.16666666666666666s;
+      background: #fe718d;
+    }.ldio-y2buzigfpa div:nth-child(11) {
+      transform: rotate(300deg);
+      animation-delay: -0.08333333333333333s;
+      background: #fe718d;
+    }.ldio-y2buzigfpa div:nth-child(12) {
+      transform: rotate(330deg);
+      animation-delay: 0s;
+      background: #fe718d;
+    }
+    .loadingio-spinner-spinner-w40ozjbhabj {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      overflow: hidden;
+      background: #ffffff;
+    }
+  
+    .ldio-y2buzigfpa {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform: translateZ(0) scale(1);
+      backface-visibility: hidden;
+      transform-origin: 0 0; /* see note above */
+  
+    }
+    .ldio-y2buzigfpa div { box-sizing: content-box; }
+  main{
+  display: flex;
+    justify-content: center;
+  }
+  
