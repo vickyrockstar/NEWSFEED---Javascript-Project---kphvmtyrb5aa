@@ -48,7 +48,7 @@ const getNews = (category = "science") => {
         loaderDiv.style.display = "block";
   newsContainer.innerHTML = "";
   const categoryName = category.charAt(0).toUpperCase() + category.slice(1);
-  fetch(`https://inshorts.deta.dev/news?category=${category}`)
+  fetch(`https://api.currentsapi.services/v1/latest-news?apiKey=PS3mlURfIZ2UA7d-Lqo7C4H45n4XYnYe_HHBEmy89zqwpW0a&category=${category}`)
     .then((response) => response.json())
     .then((data) => {
       const categoryHeading = document.createElement("h2");
