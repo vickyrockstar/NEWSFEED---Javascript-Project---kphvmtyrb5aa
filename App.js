@@ -81,7 +81,7 @@ const getNews = (category = "science") => {
           <p class="date">Date:${newsItem.published.slice(0, 10)}, Time:${newsItem.published.slice(11, 16)}</p>
           <div class="card-footer-right">
      <a class="hrt-btn" onclick="changeColorHeart(this)"><i class="fa-solid fa-heart"></i></a>
-          <button class="source-url"  data-url="${newsItem.readMoreUrl}">Source</button>
+          <button class="source-url"  data-url="${newsItem.url}">Source</button>
           </div>
         </div>
        
@@ -137,13 +137,13 @@ function readmore(button, card) {
       (newsItem) => {
         return {
           title: newsItem.querySelector(".card-title").textContent,
-          content: newsItem.querySelector(".content").textContent,
+          description: newsItem.querySelector(".content").textContent,
           author: newsItem.querySelector(".writer-name").textContent,
           categoryName:newsItem.querySelector(".category-name").textContent,
-          imageUrl: newsItem.querySelector(".img").imageUrl,
-          date: newsItem.querySelector(".date").textContent,
-          time:newsItem.querySelector(".date")/textContent,
-          readMoreUrl:newsItem.querySelector(".source-url").url
+          image: newsItem.querySelector(".img").image,
+          published: newsItem.querySelector(".date").textContent.slice(6),
+          time:newsItem.querySelector(".date")/textContent.slice(6),
+          url:newsItem.querySelector(".source-url").url
         };
       }
     );
@@ -169,16 +169,16 @@ function readmore(button, card) {
       <button id="read-more" onclick=" readmore(this, this.closest('.card'))" class="read-more">Read More</button>
       <div class="card-content-container">
       <div class="card-img-container">
-          <img src="${newsItem.imageUrl}" class="img"></img>
+          <img src="${newsItem.image}" class="img"></img>
           </div>
-          <p class="content">${newsItem.content}
+          <p class="content">${newsItem.description}
           </p>
         </div>
     </div>
     <div class="card-footer">
-      <p class="date">Date:${newsItem.date}, Time:${newsItem.time}</p>
+      <p class="date">Date:${newsItem.published.slice(0, 10)}, Time:${newsItem.published.slice(11, 16)}</p>
       <div class="card-footer-right">
-      <button class="source-url"  data-url="${newsItem.readMoreUrl}">Source</button>
+      <button class="source-url"  data-url="${newsItem.url}">Source</button>
       <a class="hrt-btn" onclick="changeColorHeart(this)"><i class="fa-solid fa-heart"></i></a>
       </div>
     </div>
