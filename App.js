@@ -56,7 +56,7 @@ const getNews = (category = "science") => {
       categoryHeading.style.textAlign ='center';
       newsContainer.appendChild(categoryHeading);
        //console.log("Data", data)
-      data.data.forEach((newsItem) => {
+      data.news.forEach((newsItem) => {
         let loaderDiv = document.querySelector(".vigshetty");
         loaderDiv.style.display = "none";
         const cards = document.createElement("div");
